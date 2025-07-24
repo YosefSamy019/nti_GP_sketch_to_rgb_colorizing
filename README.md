@@ -223,14 +223,6 @@ else:
 
 ---
 
-## 📌 Future Work
-
-* Extend to sketch-to-face or edge-to-anime generation.
-* Train on higher resolution images (e.g. 512x512).
-* Real-time demo deployment using Streamlit or Gradio.
-
----
-
 ## 📬 Contact
 
 For questions or collaborations, feel free to reach out:
