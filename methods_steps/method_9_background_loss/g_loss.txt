@@ -1,0 +1,25 @@
+def generator_loss(self, fake_output, y_true, y_pred, l1_weight=100, ssim_weight=50, background_weight=50):
+    # GAN loss (LSGAN)
+    gan_loss = tf.reduce_mean(tf.square(fake_output - 1))
+
+    # L1 loss
+    l1 = self.l1_loss(y_true, y_pred)
+
+    # SSIM loss
+    ssim = self.ssim_loss(y_true, y_pred)
+
+    # --- Background loss for white areas (+1 in [-1, 1]) ---
+    background_mask = tf.greater_equal(y_true, 0.95)  # threshold near +1 (white)
+    
+    # Force predicted background to +1 (white in [-1, 1])
+    background_area = tf.boolean_mask(y_pred, background_mask)
+    background_loss = tf.reduce_mean(tf.abs(background_area - 1.0))
+
+    # --- Total combined loss ---
+    total = (
+        gan_loss +
+        l1_weight * l1 +
+        ssim_weight * ssim +
+        background_weight * background_loss
+    )
+    return total

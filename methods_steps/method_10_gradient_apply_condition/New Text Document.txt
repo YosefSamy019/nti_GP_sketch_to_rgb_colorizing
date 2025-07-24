@@ -1,0 +1,10 @@
+# Optimizer steps
+        self.disc_optimizer.apply_gradients(zip(disc_grads, self.discrim_model.trainable_variables))
+        if disc_loss > 0.3:
+            self.disc_optimizer.apply_gradients(zip(disc_grads, self.discrim_model.trainable_variables))
+        else:
+            stddev = 0.05 / (disc_loss + 0.05)
+            stddev = tf.minimum(stddev, 0.2)
+            for var in self.discrim_model.trainable_variables:
+                noise = tf.random.normal(shape=tf.shape(var), stddev = stddev)
+                var.assign_add(noise)
