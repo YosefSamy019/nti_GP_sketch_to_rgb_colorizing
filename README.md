@@ -18,7 +18,7 @@ We iteratively improved our models through multiple architectural and loss funct
 
 ## 📈 Live Demo
 
-👉![](https://ntigpsketchtorgbcolorizing-5wetkghkbr6f7yuez69kcg.streamlit.app/)
+🚀 [Live Streamlit Demo](https://ntigpsketchtorgbcolorizing-5wetkghkbr6f7yuez69kcg.streamlit.app/)
 
 ---
 
