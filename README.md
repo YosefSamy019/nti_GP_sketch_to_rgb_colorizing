@@ -31,9 +31,9 @@ We progressively enhanced our model through these key stages:
 - Trained using edge images as input and RGB images as output.
 - **Result**: Output was overly blurry and lacked color detail.
 
-![](readme_assets/m1 (1).jpg)
-![](readme_assets/m1 (2).jpg)
-![](readme_assets/m1 (3).jpg)
+![](readme_assets/m1(1).jpg)
+![](readme_assets/m1(2).jpg)
+![](readme_assets/m1(3).jpg)
 
 ---
 
@@ -41,9 +41,9 @@ We progressively enhanced our model through these key stages:
 - Used a VGG-based feature extractor as perceptual loss.
 - **Result**: Outputs were grayscale-like and lacked color diversity.
 
-![](readme_assets/m2 (1).jpg)
-![](readme_assets/m2 (2).jpg)
-![](readme_assets/m2 (3).jpg)
+![](readme_assets/m2(1).jpg)
+![](readme_assets/m2(2).jpg)
+![](readme_assets/m2(3).jpg)
 
 ---
 
@@ -59,9 +59,9 @@ We progressively enhanced our model through these key stages:
 - Added more layers and complexity.
 - **Result**: Model started preserving colors, but hallucinated objects (e.g. cat with red head).
 
-![](readme_assets/m4 (1).jpg)
-![](readme_assets/m4 (2).jpg)
-![](readme_assets/m4 (3).jpg)
+![](readme_assets/m4(1).jpg)
+![](readme_assets/m4(2).jpg)
+![](readme_assets/m4(3).jpg)
 
 ---
 
@@ -69,9 +69,9 @@ We progressively enhanced our model through these key stages:
 - Switched to a masks-to-image dataset.
 - **Result**: Structure preservation improved.
 
-![](readme_assets/m5 (1).jpg)
-![](readme_assets/m5 (2).jpg)
-![](readme_assets/m5 (3).jpg)
+![](readme_assets/m5(1).jpg)
+![](readme_assets/m5(2).jpg)
+![](readme_assets/m5(3).jpg)
 
 ---
 
@@ -79,9 +79,9 @@ We progressively enhanced our model through these key stages:
 - Unified and standardized training on edges2shoes.
 - Balanced edge and color information.
 - 
-![](readme_assets/m6 (1).jpg)
-![](readme_assets/m6 (2).jpg)
-![](readme_assets/m6 (3).jpg)
+![](readme_assets/m6(1).jpg)
+![](readme_assets/m6(2).jpg)
+![](readme_assets/m6(3).jpg)
 - 
 ---
 
@@ -89,9 +89,9 @@ We progressively enhanced our model through these key stages:
 - Introduced Residual blocks and Squeeze-and-Excitation attention.
 - **Result**: More vivid outputs, but burnt (over-saturated) areas appeared occasionally.
 
-![](readme_assets/m7 (1).jpg)
-![](readme_assets/m7 (2).jpg)
-![](readme_assets/m7 (3).jpg)
+![](readme_assets/m7(1).jpg)
+![](readme_assets/m7(2).jpg)
+![](readme_assets/m7(3).jpg)
 ![](readme_assets/m7.png)
 ![](readme_assets/m7.webp)
 
@@ -119,9 +119,9 @@ else:
     weights += noise
 ````
 
-![](readme_assets/m10 (1).jpg)
-![](readme_assets/m10 (2).jpg)
-![](readme_assets/m10 (3).jpg)
+![](readme_assets/m10(1).jpg)
+![](readme_assets/m10(2).jpg)
+![](readme_assets/m10(3).jpg)
 
 ---
 
@@ -137,9 +137,9 @@ else:
   * Gradient penalty and noise injection for discriminator.
 * **Result**: Stable training, realistic colors, sharp structures.
 
-![](readme_assets/m11 (1).jpg)
-![](readme_assets/m11 (2).jpg)
-![](readme_assets/m11 (3).jpg)
+![](readme_assets/m11(1).jpg)
+![](readme_assets/m11(2).jpg)
+![](readme_assets/m11(3).jpg)
 
 ---
 
@@ -189,12 +189,12 @@ else:
 
 ## 📷 Visual Results
 
-![](readme_assets/final (1).png)
-![](readme_assets/final (2).png)
-![](readme_assets/final (3).png)
-![](readme_assets/final (4).png)
-![](readme_assets/final (5).png)
-![](readme_assets/final (6).png)
+![](readme_assets/final(1).png)
+![](readme_assets/final(2).png)
+![](readme_assets/final(3).png)
+![](readme_assets/final(4).png)
+![](readme_assets/final(5).png)
+![](readme_assets/final(6).png)
 
 * Input edge + noise
 * Ground truth RGB
