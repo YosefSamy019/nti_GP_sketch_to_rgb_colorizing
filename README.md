@@ -189,12 +189,14 @@ else:
 
 ## 📷 Visual Results
 
-![](readme_assets/final(1).png)
 ![](readme_assets/final(2).png)
-![](readme_assets/final(3).png)
-![](readme_assets/final(4).png)
 ![](readme_assets/final(5).png)
-![](readme_assets/final(6).png)
+![](readme_assets/final_test(1).png)
+![](readme_assets/final_test(2).png)
+![](readme_assets/final_test(3).png)
+![](readme_assets/final_test(4).png)
+![](readme_assets/final_test(5).png)
+![](readme_assets/final_test(6).png)
 
 * Input edge + noise
 * Ground truth RGB
